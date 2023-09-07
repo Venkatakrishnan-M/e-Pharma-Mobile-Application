@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_info1"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/user_login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tell_us_more_about_yourself"
+        android:fontFamily="@font/pacifico_regular"
+        android:textSize="30sp"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="120dp"
+        android:textColor="#FF1744"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/user_login_text"
+        android:hint="@string/enter_your_name"
+        android:background="@drawable/three_color_gradient"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/pacifico_regular"
+        android:paddingStart="10sp"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"/>
+
+
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/user_name"
+        android:hint="@string/enter_your_phone_number"
+        android:background="@drawable/three_color_gradient"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/pacifico_regular"
+        android:paddingStart="10sp"
+        android:textSize="23sp"
+        android:layout_marginTop="25dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/user_gender"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/user_phone"
+        android:hint="Enter your gender"
+        android:background="@drawable/three_color_gradient"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/pacifico_regular"
+        android:paddingStart="10sp"
+        android:textSize="23sp"
+        android:layout_marginTop="25dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/user_address"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/user_gender"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/three_color_gradient"
+        android:fontFamily="@font/pacifico_regular"
+        android:paddingTop="2sp"
+        android:paddingStart="10sp"
+        android:textSize="23sp"
+        android:gravity="top|start"
+        android:layout_marginTop="25dp"
+        android:inputType="textMultiLine"
+        android:hint="@string/enter_your_address"/>
+
+    <LinearLayout
+        android:id="@+id/user_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/user_address"
+        android:layout_marginTop="10dp">
+
+
+        <View
+            android:id="@+id/user_lruler"
+            android:layout_width="170dp"
+            android:layout_height="2dp"
+            android:background="@color/HotPink"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/user_or_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_or"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="2dp"
+            android:background="@color/HotPink"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_fetch_location"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fetch_address_using_gps"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/three_color_gradient"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:layout_below="@id/user_linear_layout"
+
+        />
+
+    <Button
+        android:id="@+id/go_to_dashboard"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_fetch_location"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="290dp"
+        android:background="@drawable/orange_gradient_background"
+        android:text="@string/user_arrow"
+        android:textSize="35sp"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/user_prog"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

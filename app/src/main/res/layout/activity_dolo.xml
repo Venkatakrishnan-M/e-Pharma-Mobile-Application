@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dolo"
+    android:background="@drawable/notepad_background">
+
+    <ImageView
+        android:id="@+id/dolo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/dolo_650"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/drug_name1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Drug Name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/chivomono_italic"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/dolo"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/drug_desc1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Drug Desc"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/chivomono_italic"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/drug_name1"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/drug_quan1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="No of Tablets"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/chivomono_italic"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/drug_desc1"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/drug_price1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="price Of Drug"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/chivomono_italic"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/drug_quan1"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/blue_gradient_background">
+
+    <ImageView
+        android:id="@+id/signup_img"
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_height="230dp"
+        android:src="@drawable/fill_out_pana"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_img"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signup"
+        style="@style/signupReg"
+        android:textColor="@color/Aquamarine"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupSub"
+        android:layout_below="@id/signup"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signupSub"
+        android:textSize="20sp"
+        android:textColor="@color/Aquamarine"/>
+
+    <TextView
+        android:id="@+id/regEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        style="@style/register"
+        android:layout_below="@id/signupSub"
+        android:paddingStart="40dp"
+        android:paddingTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/regEmail"
+        android:layout_marginStart="40dp"
+        android:hint="Enter your email"
+        android:padding="10dp"
+
+        android:background="@drawable/round_input"
+        android:inputType="textEmailAddress"/>
+    <TextView
+        android:id="@+id/regpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        style="@style/register"
+        android:layout_below="@id/emailInput"
+        android:paddingStart="40dp"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/regpass"
+        android:layout_marginStart="40dp"
+        android:hint="Enter Password"
+        android:padding="10dp"
+        android:background="@drawable/round_input"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/regpassCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordConfirm"
+        style="@style/register"
+        android:layout_below="@id/passInput"
+        android:paddingStart="40dp"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/passInputCon"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/regpassCon"
+        android:layout_marginStart="40dp"
+        android:hint="Confirm Password"
+        android:padding="10dp"
+        android:background="@drawable/round_input"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/createAcc"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passInputCon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:text="Create Account"
+        android:background="@drawable/round_rect_button"
+        />
+
+
+    <TextView
+        android:id="@+id/newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olduser"
+        android:layout_below="@id/createAcc"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="20dp"
+        style="@style/loginReg"
+        android:textColor="@color/GreenYellow"/>
+
+    <TextView
+        android:id="@+id/goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/newUser"
+        android:layout_below="@id/createAcc"
+        android:layout_marginTop="20dp"
+        android:paddingStart="5dp"
+        android:text="Log In"
+        style="@style/loginReg"
+        android:textColor="@color/purple_700"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progressReg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

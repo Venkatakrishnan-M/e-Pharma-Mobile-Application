@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Lavender">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile_photo" />
+
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/secularone_regular_thick"
+            android:text="@string/user_details"
+            android:textColor="@color/Indigo"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_text"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="10dp"
+            android:text="NAME:    "
+            android:textColor="@color/DarkViolet"
+            android:textSize="25sp" />
+
+
+
+        <TextView
+            android:id="@+id/profile_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="ADDRESS:    "
+            android:textColor="@color/DarkViolet"
+            android:textSize="25sp" />
+
+
+
+        <TextView
+            android:id="@+id/profile_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_address"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="GENDER:    "
+            android:textColor="@color/DarkViolet"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_gender"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="PHONE NO:    "
+            android:textColor="@color/DarkViolet"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+
+</FrameLayout>

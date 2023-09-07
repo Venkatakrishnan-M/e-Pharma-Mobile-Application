@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Billing"
+    android:background="@drawable/aesthetic_background">
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/review_your_order"
+        android:fontFamily="@font/secularone_regular_thick"
+        android:textColor="@color/Yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/checkout"
+        android:fontFamily="@font/secularone_regular_thick"
+        android:textColor="#363333"
+        android:layout_below="@id/review"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order"
+        android:text="Total Price: Rs"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/secularone_regular_thick"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/breakdown"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total"
+        android:text="Price BreakDown"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/secularone_regular_thick"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/cartItemsTextView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakdown"
+        android:text="Price BreakDown"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/secularone_regular_thick"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Lavender"
+        />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_below="@id/breakdown"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round"
+        android:textSize="20sp"/>
+
+
+
+</RelativeLayout>

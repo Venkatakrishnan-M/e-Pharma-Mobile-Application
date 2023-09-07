@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentSuccess">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/paymentSuccess_video"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:id="@+id/paymentSuccess_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Dashboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:padding="10dp"
+        android:textColor="@color/Bisque"
+        android:textSize="17sp"
+        android:background="@drawable/simple_button"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/paymentSuccess_button"
+        android:layout_marginTop="105dp"
+
+        android:src="@drawable/picture"/>
+
+</RelativeLayout>

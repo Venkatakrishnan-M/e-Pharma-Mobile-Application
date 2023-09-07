@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgot"
+    android:background="@drawable/errorbackground">
+
+    <ImageView
+        android:id="@+id/forgot_id"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/forgot"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_below="@id/forgot_id"
+        android:layout_height='wrap_content'
+        android:fontFamily="@font/secularone_regular_thick"
+        android:textColor="@color/Yellow"
+        android:text="Enter Your Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"
+        android:id="@+id/forgot_text"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/Bisque"
+        android:layout_below="@id/forgot_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="ram@gmail.com"
+        android:padding="10dp"
+        android:id="@+id/forgot_edit"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/forgot_edit"
+        android:layout_margin="20dp"
+        android:id="@+id/forgot_button"/>
+
+</RelativeLayout>
